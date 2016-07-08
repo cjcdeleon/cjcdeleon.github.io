@@ -1,0 +1,16 @@
+{
+	"current": 1,
+	"rowCount": 10,
+	"rows": [{
+		"category": "Mid-Tier: Java",
+		"details": "Java SE / EE, Spring, Struts, Hibernate"
+	}, {
+		"category": "Web: Javascript",
+		"details": "jQuery, ExtJS"
+	}, {
+		"category": "Backend: SQL",
+		"details": "Sybase, SQL Server"
+	}
+	],
+	"total": 2
+}
