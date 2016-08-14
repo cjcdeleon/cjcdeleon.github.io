@@ -1,0 +1,32 @@
+[
+  {
+    "category":"Java",
+    "details":[
+        "Java SE","Java EE",
+        "Spring", "Spring MVC", "Spring Batch", "Spring JDBC", "Spring Boot new",
+        "JPA", "Hibernate", "Struts", "Selenium", "JUnit",
+        "CXF","Axis", "JasperReports"
+      ]
+
+  },
+  {
+    "category":"JavaScript & Web",
+    "details":[
+      "jQuery", "ExtJS", "ReactJS new", "Bootstrap new"
+    ]
+  },
+  {
+    "category":"SQL & NoSQL",
+    "details":[
+      "Sybase 15", "MS SQL Server 2008", "Oracle 10g", "IBM DB2 v8", "MarkLogic 8 new"
+    ]
+  },
+  {
+    "category":"Vendor",
+    "details":[
+      "Sailpoint IdentityIQ (IIQ)", "Actimize Risk Case Manager (RCM)",
+      "IRESS", "Reuters Datascope", "Bloomberg", "FT Interactive",
+      "Salesforce", "Ingenium"
+    ]
+  }
+]

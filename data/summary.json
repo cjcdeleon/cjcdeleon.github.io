@@ -1,0 +1,22 @@
+[
+  {
+    "sum":"9",
+    "desc":"+ years experience developing Java Web Apps",
+    "iconCls":"glyphicon glyphicon-time"
+  },
+  {
+    "sum":"3",
+    "desc":"-tier developer (primarily Java then SQL & Web)",
+    "iconCls":"glyphicon glyphicon-star-empty"
+  },
+  {
+    "sum":"5",
+    "desc":"key domain knowledge in financial industry",
+    "iconCls":"glyphicon glyphicon-briefcase"
+  },
+  {
+    "sum":"3",
+    "desc":"certications: SCJP, SCWD, Spring 3 Professional",
+    "iconCls":"glyphicon glyphicon-certificate"
+  }
+]
