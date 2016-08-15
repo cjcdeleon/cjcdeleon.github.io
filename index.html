@@ -167,7 +167,6 @@
     }
 
     function renderSkills() {
-      debugger
       $.get("data/skills.json", null, function(skillsData) {
         var templateDl =
         '           <dl class="dl-horizontal" style="padding-right:20px;border-right:1px solid">'+
@@ -205,23 +204,25 @@
                 <!--
                 <a class="navbar-brand" href="#">CJ De Leon</a> <span class="navbar-brand">Senior Java Web Developer</span>
                 <h1 class="color:blue"><.></h1>
+                <dl class="navbar-brand">CJ De Leon <dt >Java Web SQL</dt></dl>
                 -->
-                <dl class="navbar-brand">CJ De Leon <dt class="small">Java Web SQL</dt></dl>
+                <div><a class="navbar-brand" href="#" style="margin:0; padding:5px; height:15px; color:white" >CJ De Leon</a> </div>
+                <div class="navbar-brand" style="margin:0; padding:5px; height:10px" ><small>Java. Web. SQL.</small></div>
                 <!--
                 <a class="navbar-brand" href="#">CJ De Leon <small>Java Web Developer</small></a>
               -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#summary">Summary</a></li>
-                    <li><a href="#contact">Experience</a></li>
-                    <li><a href="#about">Expertise</a></li>
-                    <li><a href="#contact">Education</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View As<span class="caret"></span></a>
+                    <li ><a href="#summary">Summary</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Me <span class="glyphicon glyphicon-comment"/></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">jQuery</a></li>
-                            <li><a href="#">ExtJS</a></li>
-                            <li><a href="#">ReactJS</a></li>
+                          <li> <span class="glyphicon glyphicon-map-marker"/> Sydney,Australia </li>
+                          <li> <span class="glyphicon glyphicon-envelope"/> cjcdeleon@gmail.com </li>
+                          <li> <span class="glyphicon glyphicon-phone"/> 0413201841 </li>
                         </ul>
                     </li>
                 </ul>
@@ -271,6 +272,7 @@
       </div>
     </div>
   -->
+  <a name="summary"></a>
   <div class="container">
     <div class="bs-callout bs-callout-info">
       <h1>Summary</h1>
@@ -289,6 +291,7 @@
     </div>
   </div>
 -->
+  <a name="experience"/>
   <div class="container">
     <div class="bs-callout bs-callout-info">
       <h1>Experience</h1>
@@ -309,6 +312,7 @@
     <div style="margin-top:50px"></div>
   </div>
 
+  <a name="expertise"></a>
   <div class="container">
     <div class="bs-callout bs-callout-info">
       <h1>Expertise</h1>
@@ -334,9 +338,11 @@
       </div>
     </div>
   </div>
+
+  <a name="education"></a>
   <div class="container">
     <div class="bs-callout bs-callout-info">
-      <h1>Education</h1>
+      <h1 >Education</h1>
     </div>
     <div id="edu-div" class="row">
       <div class="col-md-4">
@@ -405,6 +411,20 @@
        <table id="table2"></table>
     </div>
   -->
+
+
+  <footer class="footer bg-primary" style="margin-top:200px">
+    <div class="container">
+      <p class="pull-left">© Carlos Jaime C. De Leon 2016. </p>
+      <div class="pull-right">
+          <ul class="list-inline">
+            <li><span class="glyphicon glyphicon-map-marker"/>Sydney,Australia </li>
+            <li><span class="glyphicon glyphicon-envelope"/>cjcdeleon@gmail.com </li>
+            <li><span class="glyphicon glyphicon-phone"/>0413201841 </li>
+          </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
