@@ -1,8 +1,8 @@
 [
   {
-    "company":["Macquarie Group", "Macquarie Offshore Services Pty Ltd"],
+    "company":["Macquarie Group", "Macquarie Offshore Services"],
     "logo":"data/macquarie_logo.png",
-    "dates":["April 2016 – Present", "April 2010 – January 2016"],
+    "dates":["Apr2016 – Present", "Apr2010 – Jan2016"],
     "locations":["Sydney, Austrlia", "Makati City, Philippines"],
     "roles":["Senior Java Web Developer (Manager)"],
     "desc":"Works as a Java, Web and SQL Developer, occasionally using Unix, who implements business requirements that revolve in the financial risk management domain; had also worked on customizations and deployment for vendor risk management applications",
@@ -19,7 +19,7 @@
   {
     "company":["Sun Life Financial Philippines"],
     "logo":"data/sunlife_logo.png",
-    "dates":["April 2007 – April 2010"],
+    "dates":["Apr2007 – Apr2010"],
     "locations":["Makati City, Philippines"],
     "roles":["Java Analyst Programmer"],
     "desc":"Worked as a Java, Web and SQL Developer who implemented business requirements that revolve in insurance domain",
@@ -31,9 +31,9 @@
     ]
   },
   {
-    "company":["Azeus Systems Philippines Limited"],
+    "company":["Azeus Systems Philippines Ltd"],
     "logo":"data/azeus_logo.png",
-    "dates":["June 2006 – November 2006"],
+    "dates":["Jun2006 – Nov2006"],
     "locations":["Ortigas City, Philippines"],
     "roles":["Junior Developer"],
     "desc":"Worked as a Java, Web and SQL Junior Developer under the tutelage of senior mentors",

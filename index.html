@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>CJ De Leon, Senior Java Web SQL Developer</title>
+    <title>CJ De Leon Senior Java Web SQL Developer</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -96,7 +96,7 @@
     }
 
     function getExperienceTemplatePopoverContent(templatePopoverContent, experienceData) {
-      $(templatePopoverContent).append('<div style="margin-top:15px"><strong><span class="glyphicon glyphicon-user" style="margin-right:5px"/>'+experienceData.roles[0]+'<strong></div>');
+      $(templatePopoverContent).append('<div style="margin-top:15px"><strong><span class="glyphicon glyphicon-user" style="margin-right:5px"/>'+experienceData.roles[0]+'</strong></div>');
       $(templatePopoverContent).append('<div><small>'+experienceData.desc+'</small></div>');
       var ulObj = $('<ul/>').appendTo(templatePopoverContent);
       $(experienceData.highlights).each(function(i) {
@@ -218,11 +218,17 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#expertise">Expertise</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Me <span class="glyphicon glyphicon-comment"/></a>
+                    <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Me <span class="glyphicon glyphicon-comment"/></a>
                         <ul class="dropdown-menu">
                           <li> <span class="glyphicon glyphicon-map-marker"/> Sydney,Australia </li>
                           <li> <span class="glyphicon glyphicon-envelope"/> cjcdeleon@gmail.com </li>
                           <li> <span class="glyphicon glyphicon-phone"/> 0413201841 </li>
+                          <li class="text-center"><a href="https://au.linkedin.com/in/carlos-jaime-de-leon-a6771b2a"><img src="data/linkedin_logo.png"/></a></li>
+                          <li>
+                            <a href="http://stackexchange.com/users/452692">
+                              <img src="http://stackexchange.com/users/flair/452692.png?theme=dark" width="208" height="58" alt="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+                            </a>
+                          </li>
                         </ul>
                     </li>
                 </ul>
@@ -231,15 +237,19 @@
         </div>
     </nav>
 
-    <div class="jumbotron text-center" >
+    <div class="jumbotron text-center" style="background-color: #2c3e50; color:white">
         <div class="container">
           <div >
-            <img src="data/cj2015.jpg" alt="..." class="img-circle" style="width:10%; height:10%; margin-top:30px">
-            <h1>Cheers mate :)</h1>
+            <img src="data/cj2016.jpg" alt="..." class="img-circle img-responsive center-block" style="width:10%; height:10%; margin-top:30px">
+            <h2>Cheers mate :)</h2>
             <div>Appreciate your visit! Let me tell you my story the quickest way I can.</div>
             <div>I cut down my CV to the <strong>shortest bits but sweetest pieces</strong> below. </div>
-            <div>However if you have the <em>time and interest</em>, be sure to checkout </div>
-            <div><a class="btn btn-primary " href="#" role="button">the comprehensive version <span class="glyphicon glyphicon-save"></span></a></div>
+            <div>
+              But if you are <em>interested</em>, be sure to checkout
+              <a href="data/CarlosJaimeDeLeon_SeniorJavaDeveloper_AUG2016.docx" >the comprehensive version
+                <span class="glyphicon glyphicon-save"/>
+              </a>
+            </div>
           </div>
         </div>
     </div>
@@ -291,7 +301,7 @@
     </div>
   </div>
 -->
-  <a name="experience"/>
+  <a name="experience"></a>
   <div class="container">
     <div class="bs-callout bs-callout-info">
       <h1>Experience</h1>
@@ -348,12 +358,17 @@
       <div class="col-md-4">
         <h3 class="text-center text-info "><span class="glyphicon glyphicon-education"/> University <span class="caret"/></h3>
         <div class="panel panel-default">
-        <div class="panel-heading">De La Salle University (2002 - 2006)</div>
+        <div class="panel-heading">
+          <img src="data/dlsu_logo.png" style="float:left; margin-right:5px" width="60" height="60"/>
+          <div>
+            <small><strong>De La Salle University</strong> <span style="float:right" class="glyphicon glyphicon-calendar"/>2002 - 2006</small>
+          </div>
+        </div>
         <div class="panel-body">
-          Bachelor of Science Degree in Computer Science, Major in Software Engineering
+          <div style="margin-top:15px"><strong>Bachelor of Science Degree in Computer Science, Major in Software Engineering</strong></div>
           <ul>
-            <li>First Honors Dean’s List 1st Term SY 2005 - 2006</li>
-            <li>Second Honors Dean’s List 3rd Term SY 2005 - 2006</li>
+            <li>First Honors Dean’s List 1st Term 2005 - 2006</li>
+            <li>Second Honors Dean’s List 3rd Term 2005 - 2006</li>
           </ul>
         </div>
         </div>
@@ -413,14 +428,20 @@
   -->
 
 
-  <footer class="footer bg-primary" style="margin-top:200px">
+  <footer class="footer bg-info" style="margin-top:200px">
     <div class="container">
-      <p class="pull-left">© Carlos Jaime C. De Leon 2016. </p>
       <div class="pull-right">
           <ul class="list-inline">
+            <li>© Carlos Jaime C. De Leon 2016. </li>
             <li><span class="glyphicon glyphicon-map-marker"/>Sydney,Australia </li>
             <li><span class="glyphicon glyphicon-envelope"/>cjcdeleon@gmail.com </li>
             <li><span class="glyphicon glyphicon-phone"/>0413201841 </li>
+            <li class="text-center"><a href="https://au.linkedin.com/in/carlos-jaime-de-leon-a6771b2a"><img src="data/linkedin_logo.png"/></a></li>
+            <li>
+              <a href="http://stackexchange.com/users/452692">
+                <img src="http://stackexchange.com/users/flair/452692.png?theme=dark" width="208" height="58" alt="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+              </a>
+            </li>
           </ul>
       </div>
     </div>
