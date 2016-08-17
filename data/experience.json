@@ -2,29 +2,28 @@
   {
     "company":["Macquarie Group", "Macquarie Offshore Services"],
     "logo":"data/macquarie_logo.png",
-    "dates":["Apr2016 – Present", "Apr2010 – Jan2016"],
+    "dates":["Apr2016–Present", "Apr2010–Jan2016"],
     "locations":["Sydney, Austrlia", "Makati City, Philippines"],
     "roles":["Senior Java Web Developer (Manager)"],
     "desc":"Works as a Java, Web and SQL Developer, occasionally using Unix, who implements business requirements that revolve in the financial risk management domain; had also worked on customizations and deployment for vendor risk management applications",
     "highlights":  [
-      "promoted from Executive to Manager on April 2013",
-      "awarded twice (2) with “RMG Awards: Delivery and Drive“ (this Program is for staff who performed beyond expectations, to recognize and reward them via payroll)",
-      "awarded on March 2012: singlehandedly analyzing / developing the fix for the bank’s integration errors due to ASIC’s regulatory webservice upgrade and providing manual workaround that prevented regulatory breach and penalties",
-      "awarded on November 2012: successfully leading / delivering a major development project on schedule even with understaffed team (3 members)",
-      "awarded last May 2014 with “RMG Awards: Client Commitment, Highest Standards, Delivery and Drive“ for successfully implementing the IT solutions as envisioned by business users thereby realizing the efficiency gains in business process, if not going beyond expectations",
+      "promoted to Manager on Apr 2013",
+      "awarded on March 2012 with “RMG Awards: Delivery and Drive“ for singlehandedly analyzing / developing the fix for the bank’s integration errors due to ASIC’s regulatory webservice upgrade and providing manual workaround that prevented regulatory breach and penalties",
+      "awarded on November 2012 with “RMG Awards: Delivery and Drive“ for successfully leading / delivering a major development project on schedule even with understaffed team (3 members)",
+      "awarded on May 2014 with “RMG Awards: Client Commitment, Highest Standards, Delivery and Drive“ for successfully implementing the IT solutions as envisioned by business users thereby realizing the efficiency gains in business process, if not going beyond expectations",
       "managed and deployed the upgrade of vendor application Actimize Risk Case Manager (RCM); it was highly successful as compared to previous upgrades which had numerous post production issues",
-      "was part of the pioneer dev team for Sailpoint IIQ (IAM) that was deployed to Sydney, Australia for 5 months; assigned as lead customized reports and connector developer; success of this project paved to growth of hiring developers in Manila"
+      "member of the pioneer dev team for Sailpoint IIQ (IAM) that was deployed to Sydney, Australia for 5 months; assigned as lead customized reports and connector developer; success of this project paved to growth of hiring developers in Manila"
     ]
   },
   {
     "company":["Sun Life Financial Philippines"],
     "logo":"data/sunlife_logo.png",
-    "dates":["Apr2007 – Apr2010"],
+    "dates":["Apr2007–Apr2010"],
     "locations":["Makati City, Philippines"],
     "roles":["Java Analyst Programmer"],
     "desc":"Worked as a Java, Web and SQL Developer who implemented business requirements that revolve in insurance domain",
     "highlights":  [
-      "promoted from Junior to Analyst Java Developer on November 2008",
+      "promoted to Analyst Java Developer on Nov 2008",
       "analyzed and fixed synchronization issue in Payment Portal that causes double charging of users’ credit card (issue existed since 2003); reduced 90% of support calls related to reversing credit card charges",
       "analyzed and improved Agents’ Web App daily average of ~317 SQLExceptions to ~10 (issue existed since 2004); reduced 97 % of excessive database exceptions that were the root cause of system’s major erratic behaviour",
       "proposed, designed and implemented a Error Feedback module for Agents’ Web App that stores users’ error reports accompanied with system generated screenshots; increased 60% of support team’s turnaround time by helping them track error reports and providing them accurate data through the screen snapshots"
@@ -33,7 +32,7 @@
   {
     "company":["Azeus Systems Philippines Ltd"],
     "logo":"data/azeus_logo.png",
-    "dates":["Jun2006 – Nov2006"],
+    "dates":["Jun2006–Nov2006"],
     "locations":["Ortigas City, Philippines"],
     "roles":["Junior Developer"],
     "desc":"Worked as a Java, Web and SQL Junior Developer under the tutelage of senior mentors",
