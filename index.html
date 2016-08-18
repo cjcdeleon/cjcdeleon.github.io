@@ -24,7 +24,7 @@
         border-left-color: #1b809e;
     }
     .bs-callout {
-        padding: 10px;
+        padding: 5px;
         margin: 10px 0;
         border-bottom: 1px solid #eee;
         border-left: 1px solid #1b809e;
@@ -85,26 +85,6 @@
       });//end ajax call
     }
 
-    function getExperienceTemplatePopoverTitle(templatePopoverTitle, experienceData) {
-      $(templatePopoverTitle).append('<img src="'+experienceData.logo+'" style="float:left; margin-right:5px"/>');
-      $(experienceData.company).each(function(i) {
-        $(templatePopoverTitle).append('<div><small><strong>'+this+'</strong> <span style="float:right"><span class="glyphicon glyphicon-calendar"/>'+experienceData.dates[i]+'</span></small></div>');
-        //$(templatePopoverTitle).append('<div><small>'+this+' - '+experienceData.locations[i]+' ('+experienceData.dates[i]+')</small></div>');
-        //$(templatePopoverTitle).append('<div>'+experienceData.dates[i]+'</div>');
-      });
-      return templatePopoverTitle;
-    }
-
-    function getExperienceTemplatePopoverContent(templatePopoverContent, experienceData) {
-      $(templatePopoverContent).append('<div style="margin-top:15px"><strong><span class="glyphicon glyphicon-user" style="margin-right:5px"/>'+experienceData.roles[0]+'</strong></div>');
-      $(templatePopoverContent).append('<div><small>'+experienceData.desc+'</small></div>');
-      var ulObj = $('<ul/>').appendTo(templatePopoverContent);
-      $(experienceData.highlights).each(function(i) {
-        $('<li>'+this+'</li>').appendTo(ulObj);
-        //$(templatePopoverContent).append('<div>'+this+'</div>');
-      });
-      return templatePopoverContent;
-    }
 
 /*
     function renderExperience() {
@@ -140,27 +120,49 @@
       });//end ajax call
     }
 */
+    function getExperienceTemplatePanelTitle(templatePanelTitle, experienceData) {
+      $(templatePanelTitle).append('<img src="'+experienceData.logo+'" style="float:left; margin-right:5px"/>');
+      $(experienceData.company).each(function(i) {
+        $(templatePanelTitle).append('<div><small><strong>'+this+'</strong> <span style="float:right"><span class="glyphicon glyphicon-calendar"/>'+experienceData.dates[i]+'</span></small></div>');
+        //$(templatePanelTitle).append('<div><small>'+this+' - '+experienceData.locations[i]+' ('+experienceData.dates[i]+')</small></div>');
+        //$(templatePanelTitle).append('<div>'+experienceData.dates[i]+'</div>');
+      });
+      return templatePanelTitle;
+    }
+
+    function getExperienceTemplatePanelContent(templatePanelContent, experienceData, i ) {
+      $(templatePanelContent).append('<div style="margin-top:15px"><strong><span class="glyphicon glyphicon-user" style="margin-right:5px"/>'+experienceData.roles[0]+'</strong></div>');
+      $(templatePanelContent).append('<div><small>'+experienceData.desc+'</small></div>');
+      $(templatePanelContent).append('<button class="btn-link" data-toggle="collapse" data-target="#exp'+i+'"> <span class="glyphicon glyphicon-chevron-right"/> Expand Highlights</button>');
+      var divHighlights = $('<div id="exp'+i+'" class="collapse"/>').appendTo(templatePanelContent);
+      var ulObj = $('<ul/>').appendTo(divHighlights);
+      $(experienceData.highlights).each(function(i) {
+        $('<li>'+this+'</li>').appendTo(ulObj);
+      });
+      return templatePanelContent;
+    }
+
     function renderExperience() {
       var expDivIds = ["#macquarie-div","#sunlife-div","#azeus-div"];
       $.get("data/experience.json", null, function(experienceData) {
 
         $(experienceData).each(function(i) {
           var t = expDivIds[i];
-          var templatePopoverTitle =
-          '           <div class="panel-heading" >'+
+          var templatePanelTitle =
+          '           <div class="panel-heading" style="padding-left:5px">'+
           '           </div> ';
-          var tpt = $(templatePopoverTitle).appendTo($(t)).slideDown(1500 * i);
-          getExperienceTemplatePopoverTitle(tpt, this);
+          var tpt = $(templatePanelTitle).appendTo($(t)).slideDown(1500 * i);
+          getExperienceTemplatePanelTitle(tpt, this);
 
-          var templatePopoverContent =
+          var templatePanelContent =
           '           <div class="panel-body">                                                                              '+
           '           </div>                                                                                                     ';
-          var tpc = $(templatePopoverContent).appendTo($(t)).slideDown(1500 * i);
-          getExperienceTemplatePopoverContent(tpc, this);
+          var tpc = $(templatePanelContent).appendTo($(t)).slideDown(1500 * i);
+          getExperienceTemplatePanelContent(tpc, this, i);
 
           //t.slideDown(1500 * i);
-          //var templatePopoverContent = getExperienceTemplatePopoverContent(this);
-          //$(templatePopoverContent).appendTo(t).slideDown(1500 * i);
+          //var templatePanelContent = getExperiencetemplatePanelContent(this);
+          //$(templatePanelContent).appendTo(t).slideDown(1500 * i);
         });//end each loop
 
       });//end ajax call
@@ -169,7 +171,7 @@
     function renderSkills() {
       $.get("data/skills.json", null, function(skillsData) {
         var templateDl =
-        '           <dl class="dl-horizontal" style="padding-right:20px;border-right:1px solid">'+
+        '           <dl class="dl-horizontal" style="padding-right:20px;">'+
         '           </dl> ';
         var dl = $(templateDl).appendTo($('#skills-div'));
         $(skillsData).each(function(i) {
@@ -220,9 +222,9 @@
                     <li><a href="#education">Education</a></li>
                     <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Me <span class="glyphicon glyphicon-comment"/></a>
                         <ul class="dropdown-menu">
+                          <li> <span class="glyphicon glyphicon-envelope"/> <a href="mailto:cjcdeleon@gmail.com">cjcdeleon@gmail.com</a> </li>
+                          <li> <span class="glyphicon glyphicon-phone"/> <a href="tel:0413201841">0413201841</a></li>
                           <li> <span class="glyphicon glyphicon-map-marker"/> Sydney,Australia </li>
-                          <li> <span class="glyphicon glyphicon-envelope"/> cjcdeleon@gmail.com </li>
-                          <li> <span class="glyphicon glyphicon-phone"/> 0413201841 </li>
                           <li class="text-center"><a href="https://au.linkedin.com/in/carlos-jaime-de-leon-a6771b2a"><img src="data/linkedin_logo.png"/></a></li>
                           <li>
                             <a href="http://stackexchange.com/users/452692">
@@ -237,8 +239,46 @@
         </div>
     </nav>
 
-    <div class="jumbotron text-center" style="background-color: #2c3e50; color:white">
+    <div class="jumbotron " style="background-color: #2c3e50; color:white">
         <div class="container">
+          <div id="about-div" class="row">
+            <div class="col-md-6">
+              <div id="greeting-div">
+                <h2>Cheers mate :)</h2>
+                <div>Appreciate your visit! Let me tell you my story the quickest way I can.</div>
+                <div>I cut down my CV to the <strong>shortest bits but sweetest pieces</strong> below. </div>
+                <div>
+                  But if you are <em>interested</em>, be sure to checkout
+                  <a href="data/CarlosJaimeDeLeon_SeniorJavaDeveloper_AUG2016.docx" >the comprehensive version
+                    <span class="glyphicon glyphicon-save"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div id="pic-div" >
+                <img src="data/cj2016.jpg" class="img-circle img-responsive center-block" style="width:50%; height:50%; margin-top:30px">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="contact-div" class="pull-right">
+                <address>
+                <ul style="list-style-type: none; margin-top:10px">
+                  <li> <span class="glyphicon glyphicon-envelope"/> <a href="mailto:cjcdeleon@gmail.com">cjcdeleon@gmail.com</a> </li>
+                  <li> <span class="glyphicon glyphicon-phone"/> <a href="tel:0413201841">0413201841</a></li>
+                  <li> <span class="glyphicon glyphicon-map-marker"/> Sydney,Australia </li>
+                  <li >
+                    <span class="glyphicon glyphicon-link"/>
+                    <a href="https://au.linkedin.com/in/carlos-jaime-de-leon-a6771b2a"><img src="data/linkedin_logo.png"/></a>
+                    <a href="http://stackexchange.com/users/452692">
+                      <img src="data/stackoverflow_logo.png" alt="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+                    </a>
+                </ul>
+                </address>
+              </div>
+            </div>
+          </div>
+          <!--
           <div >
             <h2>Cheers mate :)</h2>
             <div>Appreciate your visit! Let me tell you my story the quickest way I can.</div>
@@ -251,6 +291,7 @@
             </div>
             <img src="data/cj2016.jpg" alt="..." class="img-circle img-responsive center-block" style="width:10%; height:10%; margin-top:30px">
           </div>
+        -->
         </div>
     </div>
 <!--
@@ -430,18 +471,20 @@
 
   <footer class="footer bg-info" style="margin-top:200px">
     <div class="container">
-      <div class="pull-right">
+      <div class="text-center">
           <ul class="list-inline">
             <li>© Carlos Jaime C. De Leon 2016. </li>
+            <li><span class="glyphicon glyphicon-envelope"/><a href="mailto:cjcdeleon@gmail.com">cjcdeleon@gmail.com</a> </li>
+            <li><span class="glyphicon glyphicon-phone"/><a href="tel:0413201841">0413201841</a></li>
             <li><span class="glyphicon glyphicon-map-marker"/>Sydney,Australia </li>
-            <li><span class="glyphicon glyphicon-envelope"/>cjcdeleon@gmail.com </li>
-            <li><span class="glyphicon glyphicon-phone"/>0413201841 </li>
+            <!--
             <li class="text-center"><a href="https://au.linkedin.com/in/carlos-jaime-de-leon-a6771b2a"><img src="data/linkedin_logo.png"/></a></li>
             <li>
               <a href="http://stackexchange.com/users/452692">
                 <img src="http://stackexchange.com/users/flair/452692.png?theme=dark" width="208" height="58" alt="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Carlos Jaime C. De Leon on Stack Exchange, a network of free, community-driven Q&amp;A sites">
               </a>
             </li>
+          -->
           </ul>
       </div>
     </div>
