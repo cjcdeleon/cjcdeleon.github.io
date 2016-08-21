@@ -4,7 +4,7 @@
     "details":[
         "Java SE","Java EE",
         "Spring", "Spring MVC", "Spring Batch", "Spring JDBC", "Spring Boot new",
-        "JPA", "Hibernate", "Struts", "Selenium", "JUnit",
+        "JPA", "Hibernate", "Struts", "JUnit", "Mockito", "Selenium", 
         "CXF","Axis", "JasperReports"
       ]
 
@@ -25,7 +25,7 @@
     "category":"Vendor",
     "details":[
       "Sailpoint IdentityIQ", "Actimize Risk Case Manager",
-      "Reuters Datascope", "Bloomberg", "FT Interactive","IRESS", 
+      "Reuters Datascope", "Bloomberg", "FT Interactive","IRESS",
       "Salesforce", "Ingenium"
     ]
   }

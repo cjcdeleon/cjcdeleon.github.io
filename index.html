@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>CJ De Leon Senior Java Web SQL Developer</title>
+    <title>CJ De Leon Java Web SQL Developer</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -63,7 +63,7 @@
 
         $(summaryData).each(function(i) {
           var template =
-          '       <div class="col-md-3">                                                                                                 '+
+          '       <div class="col-md-3 col-sm-6 col-xs-12">                                                                                                 '+
           '         <div class="pull-left">                                                                                              '+
           '           <h1 class="bg-primary " style="height:50px; width:50px">'+this.sum+'</h1>                                          '+
           '         </div>                                                                                                               '+
@@ -79,7 +79,7 @@
           '         </div>																												                                               ';
 
           var t = $(template).appendTo('#summary-div');
-          $(templatePopover).appendTo(t).fadeIn(1500 * i);
+          $(templatePopover).appendTo(t).fadeIn(500 * i);
         });//end each loop
 
       });//end ajax call
@@ -123,7 +123,7 @@
     function getExperienceTemplatePanelTitle(templatePanelTitle, experienceData) {
       $(templatePanelTitle).append('<img src="'+experienceData.logo+'" style="float:left; margin-right:5px"/>');
       $(experienceData.company).each(function(i) {
-        $(templatePanelTitle).append('<div><small><strong>'+this+'</strong> <span style="float:right"><span class="glyphicon glyphicon-calendar"/>'+experienceData.dates[i]+'</span></small></div>');
+        $(templatePanelTitle).append('<div><small><strong>'+this+'</strong> <span style="float:right"><span class="glyphicon glyphicon-calendar"/><abbr title="'+experienceData.lengths[i]+'">'+experienceData.dates[i]+'</abbr></span></small></div>');
         //$(templatePanelTitle).append('<div><small>'+this+' - '+experienceData.locations[i]+' ('+experienceData.dates[i]+')</small></div>');
         //$(templatePanelTitle).append('<div>'+experienceData.dates[i]+'</div>');
       });

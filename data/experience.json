@@ -3,10 +3,10 @@
     "company":["Macquarie Group", "Macquarie Offshore Services"],
     "logo":"data/macquarie_logo.png",
     "dates":["04/16–Present", "04/10–01/16"],
-    "lengths":["4m", "5y 9m"],
+    "lengths":["4months", "5years 9months"],
     "locations":["Sydney, Austrlia", "Makati City, Philippines"],
     "roles":["Senior Java Web Developer (Manager)"],
-    "desc":"Works as a Java, Web and SQL Developer, occasionally using Unix, who implements business requirements that revolve in the financial risk management domain; had also worked on customizations and deployment for vendor risk management applications",
+    "desc":"Works on Java Web apps developed with Spring, Hibernate, jQuery, ExtJS for Macquarie's risk management department. In over 6 years with Macquarie, primarily worked in Java however had exposure to a variety of technologies such as: maintaining legacy reports & jobs written in SQL + Unix, writing ad-hoc SQL scripts, integrating, customizing and deploying vendor products. Currently working on a project that uses Spring Boot, Microservices, MarkLogic (NoSQL), ReactJS and Bootstrap.",
     "highlights":  [
       "promoted to Manager on Apr 2013",
       "awarded on March 2012 with “RMG Awards: Delivery and Drive“ for singlehandedly analyzing / developing the fix for the bank’s integration errors due to ASIC’s regulatory webservice upgrade and providing manual workaround that prevented regulatory breach and penalties",
@@ -20,10 +20,10 @@
     "company":["Sun Life Financial Philippines"],
     "logo":"data/sunlife_logo.png",
     "dates":["04/07–04/10"],
-    "lengths":["3y"],
+    "lengths":["3years"],
     "locations":["Makati City, Philippines"],
     "roles":["Java Analyst Programmer"],
-    "desc":"Worked as a Java, Web and SQL Developer who implemented business requirements that revolve in insurance domain",
+    "desc":"Worked as a Java, Web and SQL Developer who implemented business requirements that revolve in insurance domain. Primarily used Spring, Struts, Hibernate but also worked on maintaining legacy apps written in plain JSP + Servlets + JDBC and a Point-of-Sale (POS) payment gateway.",
     "highlights":  [
       "promoted to Analyst Java Developer on Nov 2008",
       "analyzed and fixed synchronization issue in Payment Portal that causes double charging of users’ credit card (issue existed since 2003); reduced 90% of support calls related to reversing credit card charges",
@@ -35,10 +35,10 @@
     "company":["Azeus Systems Philippines Ltd"],
     "logo":"data/azeus_logo.png",
     "dates":["06/06–11/06"],
-    "lengths":["6m"],
+    "lengths":["6months"],
     "locations":["Ortigas City, Philippines"],
     "roles":["Junior Developer"],
-    "desc":"Worked as a Java, Web and SQL Junior Developer under the tutelage of senior mentors",
+    "desc":"Worked as a Java Junior Developer under the tutelage of senior mentors for this CMMI Level-5 software firm",
     "highlights":  [
       "passed the notorious test/interview of this CMM5 company and secured 1 of 8 junior developer slots allotted for the year 2006",
       "passed the bootcamp training (Java, SQL) with high marks"
