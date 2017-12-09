@@ -2,10 +2,10 @@
   {
     "category":"Java",
     "details":[
-        "Java SE","Java EE",
+        "Java SE 8","Java EE",
         "Spring", "Spring MVC", "Spring Batch", "Spring JDBC", "Spring Boot new",
-        "JPA", "Hibernate", "Struts", "JUnit", "Mockito", "Selenium", 
-        "CXF","Axis", "JasperReports"
+        "JPA", "Hibernate", "Struts", "JUnit", "Mockito", "AssertJ", "JaCoCo", "Selenium", 
+        "CXF","Axis", "JasperReports", "Vaadin 7 new"
       ]
 
   },
