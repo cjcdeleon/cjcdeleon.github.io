@@ -1,12 +1,27 @@
 [
   {
+    "company":["ANZ Bank"],
+    "logo":"data/anz_logo.png",
+    "dates":["01/17–Present"],
+    "lengths":["11months"],
+    "locations":["Sydney, Austrlia"],
+    "roles":["Senior Java Web Developer"],
+    "desc":"Currently working on a Risk data aggregation + calculation web app built with Spring Boot partitioned as Microservices, SQL Server 2008, Java 8 and Vaadin 7 for UI.",
+    "highlights":  [
+      "increased usage of Java 8 not only in backend but in UI as well with Vaadin",
+      "improved code quality with betterment of unit testing skills with use of Junit, AssertJ, Mockito, Selenium and JaCoCo",
+      "in the Microservices world, better understanding of REST, OAuth + JWT, Swagger and Spring Boot",
+      "gained business knowledge on contingent collateral and risk weight calculations"
+    ]
+  },
+  {
     "company":["Macquarie Group", "Macquarie Offshore Services"],
     "logo":"data/macquarie_logo.png",
-    "dates":["04/16–Present", "04/10–01/16"],
-    "lengths":["4months", "5years 9months"],
+    "dates":["04/16–10/16", "04/10–01/16"],
+    "lengths":["7months", "5years 9months"],
     "locations":["Sydney, Austrlia", "Makati City, Philippines"],
     "roles":["Senior Java Web Developer (Manager)"],
-    "desc":"Works on Java Web apps developed with Spring, Hibernate, jQuery, ExtJS for Macquarie's risk management department. In over 6 years with Macquarie, primarily worked in Java however had exposure to a variety of technologies such as: maintaining legacy reports & jobs written in SQL + Unix, writing ad-hoc SQL scripts, integrating, customizing and deploying vendor products. Currently working on a project that uses Spring Boot, Microservices, MarkLogic (NoSQL), ReactJS and Bootstrap.",
+    "desc":"Worked on Java Web apps developed with Spring, Hibernate, jQuery, ExtJS for Macquarie's risk management department. Over 6 years, primarily worked in Java however had exposure to a variety of technologies such as: maintaining legacy reports & jobs written in SQL + Unix, writing ad-hoc SQL scripts, integrating, customizing and deploying vendor products. Last project was a greenfield app for trade lifecycle reporting which was built on Spring Boot, Microservices, MarkLogic (NoSQL), ReactJS and Bootstrap.",
     "highlights":  [
       "promoted to Manager on Apr 2013",
       "awarded on March 2012 with “RMG Awards: Delivery and Drive“ for singlehandedly analyzing / developing the fix for the bank’s integration errors due to ASIC’s regulatory webservice upgrade and providing manual workaround that prevented regulatory breach and penalties",
@@ -14,6 +29,19 @@
       "awarded on May 2014 with “RMG Awards: Client Commitment, Highest Standards, Delivery and Drive“ for successfully implementing the IT solutions as envisioned by business users thereby realizing the efficiency gains in business process, if not going beyond expectations",
       "managed and deployed the upgrade of vendor application Actimize Risk Case Manager (RCM); it was highly successful as compared to previous upgrades which had numerous post production issues",
       "member of the pioneer dev team for Sailpoint IIQ (IAM) that was deployed to Sydney, Australia for 5 months; assigned as lead customized reports and connector developer; success of this project paved to growth of hiring developers in Manila"
+    ]
+  },
+  {
+    "company":["Tyro Payments"],
+    "logo":"data/tyro_logo.png",
+    "dates":["10/17–11/17"],
+    "lengths":["1.5months"],
+    "locations":["Sydney, Austrlia"],
+    "roles":["Senior Java Web Developer"],
+    "desc":"Took a huge risk & ventured the world of strict full-time pair-programming (wholeday, everyday). Unfortunately, full-time pairing took its toll and I was unable to perform at full capacity.",
+    "highlights":  [
+      "recovered from this setback and persevered with my Java career",
+      "got a short glimpse of the Payment domain and experienced albeit shortly, extreme Agile programming"
     ]
   },
   {
