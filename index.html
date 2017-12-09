@@ -152,7 +152,7 @@
     }
 
     function renderExperience() {
-      var expDivIds = ["#macquarie-div","#sunlife-div","#azeus-div"];
+      var expDivIds = ["#anz-div", "#macquarie-div", "#tyro-div","#sunlife-div","#azeus-div"];
       $.get("data/experience.json", null, function(experienceData) {
 
         $(experienceData).each(function(i) {
@@ -259,7 +259,7 @@
                 <div>I cut down my CV to the <strong>shortest bits but sweetest pieces</strong> below. </div>
                 <div>
                   But if you are <em>interested</em>, be sure to checkout
-                  <a href="data/CarlosJaimeDeLeon_SeniorJavaDeveloper_AUG2016.docx" >the comprehensive version
+                  <a href="data/CarlosJaimeDeLeon_SeniorJavaDeveloper_2017.docx" >the downloadable version
                     <span class="glyphicon glyphicon-save"/>
                   </a>
                 </div>
@@ -360,10 +360,14 @@
     <div style="margin-top:25px"></div>
     <div id="experience-div" class="row">
       <div class="col-md-6">
-        <div id="macquarie-div" class="panel panel-primary">
+        <div id="anz-div" class="panel panel-primary">
+        </div>
+        <div id="macquarie-div" class="panel panel-default">
         </div>
       </div>
       <div class="col-md-6">
+        <div id="tyro-div" class="panel panel-default">
+        </div>
         <div id="sunlife-div" class="panel panel-default">
         </div>
         <div id="azeus-div" class="panel panel-default">
